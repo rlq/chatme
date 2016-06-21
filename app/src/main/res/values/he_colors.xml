@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- common-->
+	<color name="color_hint">#FFC7C5C5</color>
+	<color name="color_black">#FF000000</color>
+	<color name="color_white">#FFFFFFFF</color>
+	<color name="color_blue">#FF33A7D3</color>
+	<color name="color_gray">#FF505050</color>
+	<color name="color_red">#FFE26926</color>
+	<color name="color_yellow">#FFFFB02F</color>
+	<color name="transparent">#00000000</color>
+	<color name="bgcolor">#eee</color>
+	<color name="line_color">#dadada</color>
+	<color name="color_ublue">#003566</color><!--0F5299  255999再淡点-->
+	<color name="color_ublue2">#8290AF</color>
+	<color name="color_ublack">#232323</color>
+	<color name="color_ue">#aeaeae</color>
+
+	<!--program-->
+	<color name="account_bg">#353535</color>
+	<color name="account_gray">#999999</color>
+	<color name="account_list">#e4e4e4</color>
+	<color name="chat_text_bg">#575757</color>
+    <color name="chat_main_bg">#0195ff</color>
+	<color name="chat_bg">#F2F2F2</color>
+	<color name="main_regist">#ffffff</color>
+	<color name="main_backgroud_search">#f7f7f7</color>
+	<color name="button_backgroud">#0195ff</color>
+	<color name="name_bg">#DDDDDD</color>
+	<color name="text_hint">#abb1b6</color>
+	<color name="name_color">#cccccc</color>
+	<color name="pop_color">#55555555</color>
+	<color name="shake_bg">#111</color>
+
+</resources>

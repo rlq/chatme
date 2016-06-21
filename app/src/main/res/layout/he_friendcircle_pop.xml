@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/disView"
+    android:layout_width="80dp"
+    android:layout_height="30dp"
+    android:gravity="center_vertical"
+    android:background="@color/pop_color"
+    android:orientation="horizontal"
+    android:visibility="gone">
+<!--@drawable/he_hide_comment"-->
+    <TextView
+        android:id="@+id/favBtn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="赞"
+        android:gravity="center"
+        android:textColor="@color/color_white"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#707070"
+        />
+    <TextView
+        android:id="@+id/commentBtn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="评论"
+        android:gravity="center"
+        android:textColor="@color/color_white"/>
+</LinearLayout>

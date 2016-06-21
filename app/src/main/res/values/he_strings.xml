@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="favort">赞</string>
+    <string name="conmment">评论</string>
+
+    <string name="confirm_title">提示</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="content_description_icon">icon</string>
+    <string name="refresh">刷新</string>
+    <string name="processing">加载中</string>
+    <string name="download">下载</string>
+    <string name="redo">重试</string>
+
+    <string name="app_back">返回</string>
+    <string name="app_cancel">取消</string>
+    <string name="app_continue">继续</string>
+    <string name="app_tip">提示</string>
+    <string name="app_send">发送</string>
+    <string name="app_set">设置</string>
+    <string name="app_save">保存</string>
+    <string name="app_delete">删除</string>
+    <string name="app_nextstep">下一步</string>
+    <string name="app_prevstep">上一步</string>
+    <string name="app_finish">完成</string>
+    <string name="app_find">查找</string>
+    <string name="app_edit">编辑</string>
+
+    <!-- verify -->
+    <string name="verify_password_null_tip">密码不能为空，请输入密码</string>
+
+    <!-- format -->
+    <string name="fmt_date">M月d日</string>
+    <string name="fmt_longdate">yyyy年M月d日</string>
+    <string name="fmt_datetime" formatted="false">M月d日 %skk:mm</string>
+    <string name="fmt_patime">kk:mm</string>
+    <string name="fmt_longtime" formatted="false">yyyy年M月d日 %skk:mm</string>
+    <string name="fmt_in60min" formatted="false">%d分钟前</string>
+    <string name="fmt_justnow">1分钟内</string>
+    <string name="fmt_dawn">凌晨</string>
+    <string name="fmt_morning">早上</string>
+    <string name="fmt_noon">中午</string>
+    <string name="fmt_afternoon">下午</string>
+    <string name="fmt_evening">晚上</string>
+    <string name="fmt_pre_yesterday">昨天</string>
+    <string name="fmt_iap_err" formatted="false">网络连接不可用，请稍候重试</string>
+    
+	<string name="app_share">分享</string>
+
+    <string name="play">播放音乐</string>
+    <string name="nickname">昵称</string>
+    <string name="loging">正在登录...</string>
+    <string name="loginFail">登录失败</string>
+    <string name="inputPassword">请输入密码</string>
+    <string name="unReg">该用户尚未注册</string>
+    <string name="reged">该用户已注册</string>
+
+    <string name="acc_notnull">账号不能为空</string>
+    <string name="pwd_notnull">密码必须填写</string>
+    <string name="acc_a_z">账号必须以字母开头</string>
+    <string name="acc_1_z">账号须由字母和数字组成</string>
+    <string name="acc_4_16size">账号长度必须在4~16位</string>
+    <string name="pwd_6_20size">密码长度必须在6~20位</string>
+    <string name="pwd_same">两次输入密码必须相同</string>
+    <string name="pwd_diff">新密码不能与旧密码相同</string>
+    <string name="reged_nick">该用户已是您的好友,昵称为</string>
+    <string name="wait">敬请期待</string>
+    <string name="reply">" 回复 "</string>
+    <string name="acc_true">请输入正确帐号</string>
+    <string name="pwd_error">旧密码错误</string>
+</resources>

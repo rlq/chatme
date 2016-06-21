@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/keylogin_toast_ui"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/he_switch_bg" >
+
+        <ImageView
+            android:id="@+id/keylogin_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/he_switch_icon" />
+
+        <TextView
+            android:id="@+id/keylogin_toast_logined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dip"
+            android:layout_toRightOf="@id/keylogin_head"
+            android:gravity="center_vertical"
+            android:text="欢迎你"
+            android:textColor="#191919"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/account_manager"
+            android:layout_width="86dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/he_click_return_selector"
+            android:gravity="center"
+            android:text="切换账号"
+            android:textColor="#ffffff"
+            android:textSize="14sp" 
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/keylogin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/account_manager"
+            android:layout_toRightOf="@id/keylogin_toast_logined"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="XXX"
+            android:textColor="@color/color_yellow"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+>
+    </RelativeLayout>
+
+</LinearLayout>

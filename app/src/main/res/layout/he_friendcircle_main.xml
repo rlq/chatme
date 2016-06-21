@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#eee"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:id="@+id/main_title_bar"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:background="@android:color/black"
+		>
+		<ImageView
+			android:id="@+id/backto"
+			android:layout_width="45dp"
+			android:layout_height="30dp"
+			android:src="@drawable/he_loading"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true" />
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="朋友圈"
+			android:textColor="@android:color/white"
+			android:gravity="center"
+			android:textSize="18dp"
+			android:layout_alignTop="@+id/backto"
+			android:layout_toRightOf="@+id/backto"
+			android:layout_toLeftOf="@+id/send_circle"
+			android:layout_toStartOf="@+id/send_circle" />
+		<ImageView
+			android:id="@+id/send_circle"
+			android:layout_width="50dp"
+			android:layout_height="30dp"
+			android:src="@drawable/he_send_icon"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true" />
+	</RelativeLayout>
+
+	<android.support.v4.widget.SwipeRefreshLayout
+		android:id="@+id/swipe_refresh_widget"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<RelativeLayout
+			android:id="@+id/bodyLayout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" >
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/recyclerView"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				/>
+
+			<include
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				layout="@layout/he_friendcircle_mianitem"/>
+
+		</RelativeLayout>
+	</android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
