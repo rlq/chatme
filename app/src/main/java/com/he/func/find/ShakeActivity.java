@@ -2,7 +2,6 @@ package com.he.func.find;
 
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -24,7 +23,6 @@ import com.he.util.Utils;
 import com.lq.ren.chat.R;
 
 
-import butterknife.BindDrawable;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import me.imid.swipebacklayout.lib.SwipeBackLayout;
@@ -102,7 +100,7 @@ public class ShakeActivity extends SwipeBackActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-               Utils.ShowTips(ShakeActivity.this, "");
+               Utils.showTips(ShakeActivity.this, "");
                 mVibrator.cancel();
                 mShakeListener.onStart();
             }

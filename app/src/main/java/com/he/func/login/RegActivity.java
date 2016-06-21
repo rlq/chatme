@@ -68,7 +68,7 @@ public class RegActivity extends Activity {
 						mChatPresenter.success(RegActivity.this, userName, password);
 						finish();
 					}else {
-						Utils.ShowTips(this, getString(R.string.reged));
+						Utils.showTips(this, getString(R.string.reged));
 					}
 				}
 				break;

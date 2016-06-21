@@ -34,7 +34,7 @@ public class Utils {
 
     private static TelephonyManager telephonyManager = null;
 
-    public static void ShowTips(Context context, String strText) {
+    public static void showTips(Context context, String strText) {
 		Toast toast = Toast.makeText(context, strText, Toast.LENGTH_LONG);
 		toast.show();
 	}
@@ -157,7 +157,7 @@ public class Utils {
 		  return true;
 		}
 		else{
-			ShowTips(context, "请输入正确的手机号");
+			showTips(context, "请输入正确的手机号");
 			return false;
 		}
 

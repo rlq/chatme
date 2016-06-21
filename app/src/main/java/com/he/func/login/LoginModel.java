@@ -129,28 +129,28 @@ public class LoginModel {
     public Boolean checkPrams(String userName, String password, Boolean isReg) {
 
         if (TextUtils.isEmpty(userName)) {
-            Utils.ShowTips(this.context, context.getString(R.string.acc_notnull));
+            Utils.showTips(this.context, context.getString(R.string.acc_notnull));
             return false;
         }
         if (TextUtils.isEmpty(password)) {
-            Utils.ShowTips(this.context, context.getString(R.string.pwd_notnull));
+            Utils.showTips(this.context, context.getString(R.string.pwd_notnull));
             return false;
         }
         if (isReg) {
             if (!userName.matches("^[a-z|A-Z]{1}.{0,}$")) {
-                Utils.ShowTips(this.context, context.getString(R.string.acc_a_z));
+                Utils.showTips(this.context, context.getString(R.string.acc_a_z));
                 return false;
             }
             if (!userName.matches("^[a-z|A-Z|0-9|_|.|-]{1,}$")) {
-                Utils.ShowTips(this.context, context.getString(R.string.acc_1_z));
+                Utils.showTips(this.context, context.getString(R.string.acc_1_z));
                 return false;
             }
             if (!userName.matches("^.{4,16}$")) {
-                Utils.ShowTips(this.context, context.getString(R.string.acc_4_16size));
+                Utils.showTips(this.context, context.getString(R.string.acc_4_16size));
                 return false;
             }
             if (!password.matches("^.{6,20}$")) {
-                Utils.ShowTips(this.context, context.getString(R.string.pwd_6_20size));
+                Utils.showTips(this.context, context.getString(R.string.pwd_6_20size));
                 return false;
             }
         }
@@ -159,33 +159,33 @@ public class LoginModel {
 
     public Boolean checkPwdPrams(String userName, String newPwd, String newTPwd,Boolean isNew){
         if (TextUtils.isEmpty(userName)) {
-            Utils.ShowTips(context,  context.getString(R.string.acc_notnull));
+            Utils.showTips(context,  context.getString(R.string.acc_notnull));
             return false;
         }
         if(!chackHasUser(context, userName)){
-            Utils.ShowTips(context,context.getString(R.string.acc_true));
+            Utils.showTips(context,context.getString(R.string.acc_true));
             return false;
         }
         if (TextUtils.isEmpty(newPwd) || TextUtils.isEmpty(newTPwd)) {
-            Utils.ShowTips(this.context,  context.getString(R.string.pwd_notnull));
+            Utils.showTips(this.context,  context.getString(R.string.pwd_notnull));
             return false;
         }
         if(!newPwd.equals(getPasswordByUsername(userName))){
-            Utils.ShowTips(context,context.getString(R.string.pwd_error));
+            Utils.showTips(context,context.getString(R.string.pwd_error));
             return false;
         }
         if (!newTPwd.matches("^.{6,20}$")) {
-            Utils.ShowTips(this.context, context.getString(R.string.pwd_6_20size));
+            Utils.showTips(this.context, context.getString(R.string.pwd_6_20size));
             return false;
         }
         if (isNew) {
             if (!newPwd.equals(newTPwd)) {
-                Utils.ShowTips(this.context, context.getString(R.string.pwd_same));
+                Utils.showTips(this.context, context.getString(R.string.pwd_same));
                 return false;
             }
         }
         else if (newPwd.equals(newTPwd)) {
-            Utils.ShowTips(this.context, context.getString(R.string.pwd_diff));
+            Utils.showTips(this.context, context.getString(R.string.pwd_diff));
             return false;
         }
         return true;

@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 
-import com.he.config.KeyConfig;
 import com.he.data.db.DBCenter;
 import com.he.data.friendcircle.Friend;
 import com.he.func.MainActivity;
@@ -93,7 +92,7 @@ public class ChatModel implements RongIM.UserInfoProvider{
         Boolean isHas = false;
         for (int i = 0; i < friendList.size(); i++) {
             if(username.equals(friendList.get(i).getUserId())){
-                Utils.ShowTips(context, context.getString(R.string.reged_nick)+friendList.get(i).getNickname());
+                Utils.showTips(context, context.getString(R.string.reged_nick)+friendList.get(i).getNickname());
                 return false;
             }
         }
@@ -107,7 +106,7 @@ public class ChatModel implements RongIM.UserInfoProvider{
         if(isHas){
             addChatUser(username);
         }else {
-            Utils.ShowTips(context,  context.getString(R.string.unReg));
+            Utils.showTips(context,  context.getString(R.string.unReg));
         }
         return isHas;
     }

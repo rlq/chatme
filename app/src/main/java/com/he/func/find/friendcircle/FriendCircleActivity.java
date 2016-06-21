@@ -15,17 +15,10 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.he.data.friendcircle.CircleItem;
 import com.he.data.friendcircle.CommentConfig;
-import com.he.data.friendcircle.CommentItem;
-import com.he.data.friendcircle.FavortItem;
 import com.he.func.find.friendcircle.itemview.CommentListView;
 import com.he.util.Utils;
 import com.lq.ren.chat.R;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
-
-import java.util.List;
 
 import me.imid.swipebacklayout.lib.SwipeBackLayout;
 import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
@@ -139,7 +132,7 @@ public class FriendCircleActivity extends SwipeBackActivity implements View.OnCl
                 finish();
                 break;
             case R.id.send_circle:
-                Utils.ShowTips(this,getString(R.string.wait));
+                Utils.showTips(this,getString(R.string.wait));
                 break;
         }
     }

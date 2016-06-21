@@ -119,7 +119,7 @@ public class LogActivity extends Activity implements LoginView{
 			finish();
 		}
 		else {
-			Utils.ShowTips(this, getString(R.string.unReg));
+			Utils.showTips(this, getString(R.string.unReg));
 		}
 	}
 
@@ -140,7 +140,7 @@ public class LogActivity extends Activity implements LoginView{
 						doLoginAccount();
 					}
 					else{
-						Utils.ShowTips(LogActivity.this, getString(R.string.inputPassword));
+						Utils.showTips(LogActivity.this, getString(R.string.inputPassword));
 						pwd.setText("");
 					}
 				}
