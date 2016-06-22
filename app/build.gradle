@@ -6,7 +6,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.lq.ren.metoo1"
+        applicationId "com.lq.ren.chat"
         minSdkVersion 16
         targetSdkVersion 23
         compileOptions {
