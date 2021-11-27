@@ -2,7 +2,6 @@ package com.he.func.find.friendcircle.itemadapter;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewStub;
 import android.widget.ImageView;
@@ -27,6 +26,7 @@ import com.nostra13.universalimageloader.core.assist.ImageSize;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;

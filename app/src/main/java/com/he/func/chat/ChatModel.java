@@ -17,10 +17,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import io.rong.imkit.RongIM;
+import io.rong.imkit.userinfo.UserDataProvider;
 import io.rong.imlib.RongIMClient;
 import io.rong.imlib.model.UserInfo;
 
-public class ChatModel implements RongIM.UserInfoProvider{
+public class ChatModel implements UserDataProvider.UserInfoProvider{
 
     public List<Friend> friendList;
     public ChatModel(){
@@ -121,14 +122,6 @@ public class ChatModel implements RongIM.UserInfoProvider{
              */
             RongIM.connect(token, new RongIMClient.ConnectCallback() {
                 /**
-                 * Token 错误，在线上环境下主要是因为 Token 已经过期，您需要向 App Server 重新请求一个新的 Token
-                 */
-                @Override
-                public void onTokenIncorrect() {
-
-                    Log.d("LoginActivity", "--onTokenIncorrect");
-                }
-                /**
                  * 连接融云成功
                  * @param userid 当前 token
                  */
@@ -136,14 +129,17 @@ public class ChatModel implements RongIM.UserInfoProvider{
                 public void onSuccess(String userid) {
                     context.startActivity(new Intent(context.getApplicationContext(), MainActivity.class));
                 }
-                /**
-                 * 连接融云失败
-                 * @param errorCode 错误码，可到官网 查看错误码对应的注释
-                 */
+
                 @Override
-                public void onError(RongIMClient.ErrorCode errorCode) {
-                    Log.d("LoginActivity", "--onError" + errorCode);
+                public void onError(RongIMClient.ConnectionErrorCode connectionErrorCode) {
+
                 }
+
+                @Override
+                public void onDatabaseOpened(RongIMClient.DatabaseOpenStatus databaseOpenStatus) {
+
+                }
+
             });
         }
     }

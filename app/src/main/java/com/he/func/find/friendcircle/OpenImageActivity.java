@@ -6,8 +6,6 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,8 +30,10 @@ import com.nostra13.universalimageloader.utils.MemoryCacheUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-import uk.co.senab.photoview.PhotoView;
-import uk.co.senab.photoview.PhotoViewAttacher;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+import io.rong.imkit.picture.photoview.OnPhotoTapListener;
+import io.rong.imkit.picture.photoview.PhotoView;
 
 public class OpenImageActivity extends Activity {
 
@@ -122,7 +122,7 @@ public class OpenImageActivity extends Activity {
     }
 
     private static class ImageAdapter extends PagerAdapter implements
-            PhotoViewAttacher.OnPhotoTapListener {
+            OnPhotoTapListener {
 
         private List<String> mDatas = new ArrayList<>();
         private LayoutInflater mInflater;
@@ -226,9 +226,8 @@ public class OpenImageActivity extends Activity {
             return null;
         }
 
-
         @Override
-        public void onPhotoTap(View view, float v, float v1) {
+        public void onPhotoTap(ImageView imageView, float v, float v1) {
 
         }
     }

@@ -1,7 +1,7 @@
 package com.he.data.friendcircle;
 
-import com.sea_monster.resource.Resource;
 
+import com.bumptech.glide.load.engine.Resource;
 
 public class Friend   {
 

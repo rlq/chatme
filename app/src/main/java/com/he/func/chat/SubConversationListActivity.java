@@ -3,7 +3,8 @@ package com.he.func.chat;
 import com.lq.ren.chat.R;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+
+import androidx.fragment.app.FragmentActivity;
 
 public class SubConversationListActivity extends FragmentActivity {
 

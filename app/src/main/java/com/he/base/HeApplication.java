@@ -28,7 +28,7 @@ public class HeApplication extends Application{
         super.onCreate();
         getContext = getApplicationContext();
         initImageLoader();
-        RongIM.init(this);
+        RongIM.init(this, "lmxuhwagxqcwd");
     }
 
     public static String getCurProcessName(Context context) {

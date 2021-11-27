@@ -3,10 +3,11 @@ package com.he.func.chat.FriendList;
 import com.lq.ren.chat.R;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
 import android.view.Window;
 import android.widget.TextView;
+
+import androidx.fragment.app.FragmentActivity;
 
 
 public class ConversationActivity extends FragmentActivity {

@@ -2,9 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.rong.imkit" >
 
-    <uses-sdk
-        android:minSdkVersion="9"
-        android:targetSdkVersion="21" />
+    <uses-sdk android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"

@@ -1,9 +1,13 @@
 package com.he.func;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import io.rong.imkit.fragment.ConversationListFragment;
+import io.rong.imkit.conversationlist.ConversationListFragment;
 import io.rong.imlib.model.Conversation;
 
 import java.util.ArrayList;
@@ -17,16 +21,12 @@ import com.lq.ren.chat.R;
 
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
 
-public class MainActivity extends FragmentActivity  implements
+public class MainActivity extends FragmentActivity implements
 		ViewPager.OnPageChangeListener{
 
 	@BindView(R.id.viewpager)
@@ -52,7 +52,7 @@ public class MainActivity extends FragmentActivity  implements
 
 	private Fragment initConversationList() {
 		if(mConversationFragment == null){
-			ConversationListFragment listFragment = ConversationListFragment.getInstance();
+			ConversationListFragment listFragment = new ConversationListFragment();
 			Uri uri = Uri.parse("rong://" + getApplicationInfo().packageName).buildUpon()
 					.appendPath("conversationlist")
 					.appendQueryParameter(Conversation.ConversationType.PRIVATE.getName(), "false") //设置私聊会话是否聚合显示
@@ -62,7 +62,7 @@ public class MainActivity extends FragmentActivity  implements
 					.appendQueryParameter(Conversation.ConversationType.APP_PUBLIC_SERVICE.getName(), "false")//订阅号
 					.appendQueryParameter(Conversation.ConversationType.SYSTEM.getName(), "false")//系统
 					.build();
-			listFragment.setUri(uri);
+//			listFragment.setUri(uri);
 			return listFragment;
 		}else {
 			return mConversationFragment;

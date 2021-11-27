@@ -1,12 +1,10 @@
 package com.he.func.find.friendcircle.itemadapter;
 
-import android.support.annotation.NonNull;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
 import android.text.style.DynamicDrawableSpan;
 import android.text.style.ImageSpan;
-import android.view.View;
 
 import com.he.data.friendcircle.FavortItem;
 import com.he.base.HeApplication;
@@ -16,6 +14,8 @@ import com.he.widget.spannable.NameClickable;
 import com.lq.ren.chat.R;
 
 import java.util.List;
+
+import androidx.annotation.NonNull;
 
 public class FavortListAdapter {
 
